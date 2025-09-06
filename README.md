@@ -1,4 +1,4 @@
-# Python exercices
+# 💻Python Exercices🐍
 
 Olá, pessoal! sejam bem-vindos ao meu repertório de exercícios em Python!
 
