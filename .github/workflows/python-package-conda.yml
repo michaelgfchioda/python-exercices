@@ -7,24 +7,22 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13", '3.14-rc']
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
       max-parallel: 5
 
     steps:
     - uses: actions/checkout@v4
 
-    - name: Build Python ${{ matrix.python-version }}
+    - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
 
     - name: Add conda to system path
-      run: |
-        echo $CONDA/bin >> $GITHUB_PATH
+      run: echo $CONDA/bin >> $GITHUB_PATH
 
     - name: Install dependencies
-      run: |
-        conda env update --file environment.yml --name base
+      run: conda env update --file environment.yml --name base
 
     - name: Lint with flake8
       run: |
@@ -36,3 +34,16 @@ jobs:
       run: |
         conda install pytest
         pytest
+
+  build-latest:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python 3.14-rc
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.14-rc"
+    - run: echo $CONDA/bin >> $GITHUB_PATH
+    - run: conda env update --file environment.yml --name base
+    - run: conda install pytest
+    - run: pytest
