@@ -1,6 +1,6 @@
 <h1 align="center"> Python Exercices🐍 </h1>
 
-<h2> INTRODUÇÂO🌱 </h2>
+<h2> INTRODUÇÃO🌱 </h2>
 <p> <strong>
 Olá, pessoal! sejam bem-vindos ao meu repositório de exercícios em Python do Curso Em Video!
 
