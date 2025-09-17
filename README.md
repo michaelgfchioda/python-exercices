@@ -8,3 +8,9 @@ Esse repositório foi criado com o objetivo de compartilhar a minha evolução c
 
 Me acompanhe nesta jornada!
 </strong> </p>
+
+<hr>
+<p align="center">
+  <img src="https://i.pinimg.com/736x/d8/01/01/d80101476830af9e9bb328449d3d08db.jpg" width="935" heigth="1400"/>
+</p>
+<hr>
