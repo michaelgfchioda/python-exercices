@@ -11,6 +11,6 @@ Me acompanhe nesta jornada!
 
 <hr>
 <p align="center">
-  <img src="https://i.pinimg.com/736x/d8/01/01/d80101476830af9e9bb328449d3d08db.jpg" width="935" heigth="1400"/>
+  <img src="https://i.redd.it/v7g6ime1wtk61.jpg" width="935" heigth="1400"/>
 </p>
 <hr>
